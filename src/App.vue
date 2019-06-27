@@ -1,28 +1,40 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <first-component v-show="showFirst" :handleClick="handleClick"></first-component>
+        <second-component v-show="!showFirst" :handleClick="handleClick"></second-component>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FirstComponent from './components/FirstComponent.vue';
+import SecondComponent from './components/SecondComponent.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    FirstComponent,
+    SecondComponent,
+  },
+  data() {
+    return {
+      showFirst: true,
+    };
+  },
+  methods: {
+    handleClick(val) {
+      this.showFirst = val;
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.component > * {
+  margin: 20px;
+}
+
+button {
+  font-size: 22px;
 }
 </style>
+ 
