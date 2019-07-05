@@ -77,10 +77,14 @@ export default {
 		tranform: translateY(-50%)
 		width: 30px
 		height: 30px
-
-	.slide-enter
-		opacity: 1
-	.slide-leave
-		opacity: 0
+    
+	.slider__nav-rightside
+		position: absolute
+		top: 50%
+		right: 10px
+		tranform: translateY(-50%)
+		width: 30px
+		height: 30px
+ 
 </style>
  
