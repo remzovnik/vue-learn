@@ -1,5 +1,7 @@
 <template>
-    <div id="app">Main</div>
+    <div id="app">
+        <transition></transition>
+    </div>
 </template>
 
 <script>
