@@ -77,7 +77,7 @@ export default {
 		tranform: translateY(-50%)
 		width: 30px
 		height: 30px
-	
+    
 	.slider__nav-rightside
 		position: absolute
 		top: 50%
@@ -85,7 +85,6 @@ export default {
 		tranform: translateY(-50%)
 		width: 30px
 		height: 30px
-	
  
 </style>
  
