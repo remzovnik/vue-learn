@@ -5,6 +5,7 @@
                 <template #header="slotProps">{{slotProps.user.name}}</template>
                 <template>Main text</template>
                 <template #footer>Footer text</template>
+                <!-- test comment -->
             </layout>
         </div>
     </div>
