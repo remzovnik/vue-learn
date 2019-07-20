@@ -1,9 +1,33 @@
 <template>
-    <div id="app">Main</div>
+    <div id="app">
+        <div class="container">
+            <layout></layout>
+        </div>
+    </div>
 </template>
 
 <script>
+import BaseLayout from '@/components/BaseLayout.vue';
 export default {
 	name: 'app',
+	components: {
+		layout: BaseLayout,
+	},
+	data() {
+		return {
+			headerData: {
+				logo: 'logo',
+				menu: 'About Catalog Contacts',
+			},
+		};
+	},
 };
 </script>
+
+<style>
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+</style>
