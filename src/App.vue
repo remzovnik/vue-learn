@@ -1,7 +1,11 @@
 <template>
     <div id="app">
         <div class="container">
-            <layout></layout>
+            <layout>
+                <template #header="slotProps">{{slotProps.user.name}}</template>
+                <template>Main text</template>
+                <template #footer>Footer text</template>
+            </layout>
         </div>
     </div>
 </template>
